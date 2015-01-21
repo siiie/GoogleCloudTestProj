@@ -56,7 +56,7 @@ public class GcmIntentService extends IntentService {
     protected void showNotification(final String msg){
         // Prepare intent which is triggered if the
         // notification is selected
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, LocationView.class);
         PendingIntent pIntent = PendingIntent.getActivity(this, 0, intent, 0);
 
         // Build notification
